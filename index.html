@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+  <main class="main">
+  <section class="top">
+    <div>
+      <h1> Notifications</h1>
+      <span>3</span>
+    </div>
+    <div>
+      <span class="hover-item"> Mark all as read</span>
+    </div>
+  </section>
+  <section class="buttom">
+    <div class="item item1">
+      <div>
+        <img src="assets\images\p1.webp">
+      </div>
+      <div>
+        <div>
+          <strong><a class="hover-item" href="#">Mark Webber</a></strong>
+          <span >  reacted to your recent post </span>
+          <a class="post-name hover-item has-dot" href="#">My first tournament today!</a>
+        </div>
+        <div>
+          <span>
+            1m ago
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item item2">
+      <div>
+        <img src="assets\images\p2.webp">
+      </div>
+      <div>
+        <div>
+          <strong><a class="hover-item" href="#">Angela Gray</a></strong>
+          <span class="has-dot">  followed you </span>
+           </div>
+        <div>
+          <span>
+            5m ago
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item item3">
+      <div>
+        <img src="assets\images\p3.webp">
+      </div>
+      <div>
+        <div>
+          <strong><a class="hover-item" href="#">Jacob Thompson</a></strong>
+          <span >  reacted to your recent post </span>
+          <a class="post-name hover-item has-dot" href="#">Chess Club</a>
+        </div>
+        <div>
+          <span>
+            1day ago
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item item4 special-case">
+      <div class="part1">
+        <div>
+          <img src="assets\images\p4.webp">
+        </div>
+        <div>
+          <div>
+            <strong><a class="hover-item" href="#">Rizky Hasanuddin</a></strong>
+            <span >  sent you private message </span>
+          </div>
+          <div>
+            <span>
+              5day ago
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="part2">
+          <p>
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game.
+          </p>
+      </div>
+    </div>
+
+
+    <div class="item item5 old ">
+      <div>
+        <img src="assets\images\p5.webp">
+      </div>
+      <div>
+        <div>
+          <strong><a class="hover-item" href="#">   Kimberly Smith</a></strong>
+          <span >  commented on your picture </span>
+        </div>
+        <div>
+          <span>
+            1 weeks ago
+          </span>
+        </div>
+      </div>
+      <div class="p-post"> <img src="assets/images/p-post.webp"></div>
+    </div>
+
+
+    <div class="item item6 old ">
+      <div>
+        <img src="assets\images\p6.webp">
+      </div>
+      <div>
+        <div>
+          <strong><a class="hover-item" href="#"> Nathan Peterson </a></strong>
+          <span >  reacted to your recent post </span>
+          <a class="post-name hover-item " href="#">5 end-game strategies to increase your win rate</a>
+        </div>
+        <div>
+          <span>
+            2 weeks ago
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item item7 old">
+      <div>
+        <img src="assets\images\p7.webp">
+      </div>
+      <div>
+        <div>
+          <strong><a class="hover-item" href="#"> Anna Kim</a></strong>
+          <span >  left the group </span>
+          <a class="post-name hover-item " href="#">Chess Club</a>
+        </div>
+        <div>
+          <span>
+            2 weeks ago
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+
+<!--
+  Notifications 3
+
+  Mark all as read
+
+  Mark Webber reacted to your recent post My first tournament today!
+  1m ago
+
+  Angela Gray followed you
+  5m ago
+
+  Jacob Thompson has joined your group Chess Club
+  1 day ago
+
+  Rizky Hasanuddin sent you a private message
+  5 days ago
+  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+  I'm already having lots of fun and improving my game.
+
+  Kimberly Smith commented on your picture
+  1 week ago
+
+  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+  2 weeks ago
+
+  Anna Kim left the group Chess Club
+  2 weeks ago
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+-->
+
+</body>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+    --dot-color:#fd4d49;
+
+  }
+
+  body{
+    padding: 1rem;
+    background-color: var(--very-light-grayish-blue);
+  }
+
+  main{
+    max-width: 50rem;
+    margin: auto;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    background-color: var(--white) ;
+  }
+
+  .top{
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .top div{
+    display:flex;
+    align-items: center;
+  }
+
+  .top h1+span {
+    margin-inline: 1rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    background-color:  hsl(228, 45%, 44%);
+    color:white;
+  }
+
+  .item {
+    background-color: var(--very-light-grayish-blue);
+    display:flex;
+    align-items: center;
+    margin-block: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .item > *, .part1 > *  {
+    margin-inline: 0.5rem;
+  }
+
+  .dot{
+
+    background-color: var(--grayish-blue);
+    border:3px solid red;
+    border-radius: 50%;
+    width:1rem;
+    height: 1rem;
+
+  }
+
+  .post-name{
+    font-weight: 700;
+    color:var(--dark-grayish-blue);
+  }
+  .hover-item{
+    cursor: pointer;
+  }
+
+  .hover-item:hover{
+    color:hsl(228, 45%, 44%);
+  }
+
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  .has-dot{
+    position: relative;
+  }
+  .has-dot::after{
+    position: absolute;
+    content: '';
+    top:0;
+    bottom: 0;
+    margin-block: auto;
+    right: -13px;
+    width:0.4rem;
+    height:0.5rem;
+    background-color: var(--dot-color);
+    border-radius: 50%;
+
+  }
+
+  span{
+    color:var(--grayish-blue);
+    font-weight: 500;
+  }
+
+  .special-case{
+flex-direction: column;
+background-color: white;
+  }
+  .part1{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+  }
+
+  .part2{
+    cursor: pointer;
+    align-self: flex-end;
+    background-color: white;
+    width:80%;
+    line-height: 1.4;
+    border-radius: 3px;
+    padding: 1rem;
+    border: 1px solid var(--grayish-blue);
+  }
+
+  .part2:hover{
+    background-color: var(--very-light-grayish-blue);
+  }
+
+  .p-post{
+    margin-left: auto;
+  }
+
+  .old{
+    background-color: white;
+  }
+
+
+</style>
+</html>
